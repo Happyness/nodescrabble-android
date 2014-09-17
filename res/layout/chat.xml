@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:id="@+id/chat">
+
+    <Button
+            android:id="@+id/chat_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="-90"
+            android:text="CHAT"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:color="#000000"
+            style="@style/ButtonText"
+            android:background="@drawable/button"
+            />
+
+<EditText
+        android:id="@+id/EditTextWriteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="write message"
+        android:layout_toRightOf="@+id/chat_drag"
+        android:layout_alignParentRight="true"
+        />
+
+<Button
+        android:id="@+id/ButtonSendMessage"
+        android:layout_width="match_parent"
+        style="@style/ButtonText"
+        android:background="@drawable/button"
+        android:text="Send message"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextWriteMessage"
+        android:layout_toRightOf="@+id/chat_drag"
+        />
+
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/ButtonSendMessage"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/chat_drag">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <TextView
+                android:id="@+id/TextViewDialog"
+                android:layout_width="match_parent"
+                android:layout_height="331dp" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

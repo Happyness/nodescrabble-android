@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp">
+
+        <TextView  android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="Regler"
+                   android:textStyle="bold"
+                />
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="226dp"
+               android:layout_height="wrap_content"
+               android:text=" - Spelare turas om att spela drag, play, swap eller pass. Första draget måste alltid läggas
+               i mitten."
+               android:paddingBottom="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+        <TextView  android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" - När du trycker på Play-knappen kontrolleras ditt ord med en ordlista, om det är in tur
+                   och du får tillbaka om det är korrekt eller inte. Ditt ord måste läggas lodrätt eller vågrätt,
+                   samt i anslutning till någon annan bricka på spelplanen, om den inte är tom."
+                   android:paddingBottom="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <TextView  android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" - Vid läggande av nya brickor kan du använda dig utav bonusrutor, som ger dubbla eller trippla av antingen
+                       bokstaven eller hela ordet."
+                       android:paddingBottom="10dp"
+                    />
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <TextView  android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" - Att spela swap och pass, räknas som ett drag och efter är det motständarens tur.
+                   När du spelar swap, kan du trycka på dem brickor du vill byta ut och får dem utbytta, förutsatt
+                   att det finns brickor att byta till. Passar du går turen över."
+                   android:paddingBottom="10dp"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <TextView  android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" - Spelet slutar om en spelare passar två gånger i rad, eller om en spelare har slut på brickor
+                   och inga nya brickor finns kvar. Den som förlorar är den som passat två gånger i rad, eller
+                   har minst poäng vid slut på brickor. De brickor du har kvar när spelet slutar, kommer dras av slutpoängen."
+                   android:paddingBottom="10dp"
+                />
+    </LinearLayout>
+        <TextView  android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/helpText"
+                   android:text="Bonusrutor"
+                   android:textStyle="bold"
+                />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+        <TextView  android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:background="#76A86B"
+                />
+        <TextView  android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:text="Dubbel bokstavspoäng"
+                   android:textStyle="bold"
+                   android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+        <TextView  android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:background="#1B8FA1"
+                />
+        <TextView  android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:text="Trippel bokstavspoäng"
+                   android:textStyle="bold"
+                   android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+        <TextView  android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:background="#CF8025"
+                />
+        <TextView  android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:text="Dubbel ordpoäng"
+                   android:textStyle="bold"
+                   android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView    android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:background="#9F4718"
+                    />
+            <TextView  android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center_vertical"
+                       android:text="Trippel ordpoäng"
+                       android:textStyle="bold"
+                       android:paddingLeft="10dp"
+                    />
+        </LinearLayout>
+    <Button
+            android:text="Go back"
+            android:id="@+id/okButton"
+            style="@style/ButtonText"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+</ScrollView>

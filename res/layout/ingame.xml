@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:scrollbars="none"
+     android:id="@+id/slider">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <include layout="@layout/gameplay"/>
+        <include layout="@layout/chat"/>
+     </LinearLayout>
+</HorizontalScrollView>

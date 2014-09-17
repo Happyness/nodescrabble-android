@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>KTH.joel.nodescrabble</OriginalElement>
+  <nodes>
+    <node x="1218.0" y="466.0">KTH.joel.nodescrabble.SessionHandler</node>
+    <node x="704.5" y="346.0">KTH.joel.nodescrabble.View</node>
+    <node x="478.0" y="186.0">KTH.joel.nodescrabble.Scrabble</node>
+    <node x="983.0" y="466.0">KTH.joel.nodescrabble.GameSession</node>
+    <node x="54.5" y="186.0">KTH.joel.nodescrabble.Listener</node>
+    <node x="262.0" y="106.0">KTH.joel.nodescrabble.SocketHandler</node>
+    <node x="992.5" y="346.0">KTH.joel.nodescrabble.JsonHelper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="KTH.joel.nodescrabble.Listener" target="KTH.joel.nodescrabble.Scrabble">
+      <point x="40.0" y="14.0" />
+      <point x="160.0" y="400.0" />
+      <point x="485.7142857142857" y="400.0" />
+      <point x="-34.28571428571428" y="14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.JsonHelper" target="KTH.joel.nodescrabble.View">
+      <point x="-47.5" y="0.0" />
+      <point x="55.5" y="0.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Scrabble" target="KTH.joel.nodescrabble.Listener">
+      <point x="-42.0" y="0.0" />
+      <point x="65.5" y="0.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.SessionHandler" target="KTH.joel.nodescrabble.GameSession">
+      <point x="-62.0" y="0.0" />
+      <point x="57.0" y="0.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Scrabble" target="KTH.joel.nodescrabble.SessionHandler">
+      <point x="34.285714285714334" y="-14.0" />
+      <point x="554.2857142857143" y="0.0" />
+      <point x="1280.0" y="0.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Scrabble" target="KTH.joel.nodescrabble.SocketHandler">
+      <point x="-42.0" y="-8.571428571428584" />
+      <point x="320.0" y="191.42857142857142" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Scrabble" target="KTH.joel.nodescrabble.GameSession">
+      <point x="42.0" y="2.857142857142861" />
+      <point x="1160.0" y="202.85714285714286" />
+      <point x="1160.0" y="471.42857142857144" />
+      <point x="57.0" y="-8.571428571428555" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Listener" target="KTH.joel.nodescrabble.SocketHandler">
+      <point x="-65.5" y="0.0" />
+      <point x="0.0" y="200.0" />
+      <point x="0.0" y="120.0" />
+      <point x="-58.0" y="0.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.View" target="KTH.joel.nodescrabble.View">
+      <point x="0.0" y="-14.0" />
+      <point x="760.0" y="240.0" />
+      <point x="920.0" y="240.0" />
+      <point x="920.0" y="355.7142857142857" />
+      <point x="55.5" y="-4.285714285714278" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.View" target="KTH.joel.nodescrabble.Scrabble">
+      <point x="-55.5" y="-4.285714285714278" />
+      <point x="520.0" y="355.7142857142857" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Scrabble" target="KTH.joel.nodescrabble.View">
+      <point x="42.0" y="5.714285714285722" />
+      <point x="720.0" y="205.71428571428572" />
+      <point x="-40.0" y="-14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.Listener" target="KTH.joel.nodescrabble.GameSession">
+      <point x="0.0" y="14.0" />
+      <point x="120.0" y="480.0" />
+      <point x="-57.0" y="0.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.SocketHandler" target="KTH.joel.nodescrabble.Scrabble">
+      <point x="0.0" y="-14.0" />
+      <point x="320.0" y="40.0" />
+      <point x="520.0" y="40.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.SocketHandler" target="KTH.joel.nodescrabble.Listener">
+      <point x="-58.0" y="8.571428571428584" />
+      <point x="120.0" y="128.57142857142858" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.GameSession" target="KTH.joel.nodescrabble.View">
+      <point x="-57.0" y="-5.714285714285722" />
+      <point x="600.0" y="474.2857142857143" />
+      <point x="600.0" y="368.57142857142856" />
+      <point x="-55.5" y="8.571428571428555" />
+    </edge>
+    <edge source="KTH.joel.nodescrabble.JsonHelper" target="KTH.joel.nodescrabble.GameSession">
+      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7611015490533563" x="734.0370872908187" y="305.04070556309364" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

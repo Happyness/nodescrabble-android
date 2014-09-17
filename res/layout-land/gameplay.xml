@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:id="@+id/gameTable">
+
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:id="@+id/boardscroll">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/board"
+                    android:background="@android:color/transparent"
+                    />
+        </ScrollView>
+        <LinearLayout                 android:orientation="vertical"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_gravity="fill_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scoreBoard"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gameresponse"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000000"/>
+            <Button
+                    android:text="@string/back"
+                    android:id="@+id/backButton"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+
+            <Button
+                    android:text="@string/play"
+                    android:id="@+id/playMove"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+            <Button
+                    android:text="@string/pass"
+                    android:id="@+id/passMove"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+            <Button
+                    android:text="@string/swap"
+                    android:id="@+id/swapMove"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+            <Button
+                    android:text="Clear moved"
+                    android:id="@+id/clearMoved"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+
+            <Button
+                    android:text="Shuffle"
+                    android:id="@+id/shuffle"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"/>
+        </LinearLayout>
+</LinearLayout>

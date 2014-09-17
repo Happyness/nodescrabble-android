@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+        <TextView
+               android:id = "@+id/joinGameLabel"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Choose game to join"
+               android:layout_alignParentLeft="true"
+               android:layout_toLeftOf="@+id/chooseLanguageLabel"
+         />
+
+        <TextView
+                android:id = "@+id/chooseLanguageLabel"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Language"
+         />
+
+
+            <Spinner
+                    android:id="@+id/gameList"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/joinGameLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/languageList"
+                    />
+            <Spinner
+            android:id="@+id/languageList"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/chooseLanguageLabel"
+            android:layout_alignParentRight="true"
+                    />
+
+            <Button
+                    android:text="@string/joinGame"
+                    android:id="@+id/joinGame"
+                    style="@style/ButtonText"
+                    android:background="@drawable/button"
+                    android:layout_below="@+id/gameList"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/createGame"
+                    android:layout_width="0dp"
+                    />
+        <Button
+            android:text="@string/createGame"
+            android:id="@+id/createGame"
+            style="@style/ButtonText"
+            android:background="@drawable/button"
+            android:layout_below="@+id/languageList"
+            android:layout_alignParentRight="true"
+            android:layout_width="110dp"
+            />
+    <TextView
+            android:id="@+id/selectresponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/joinGame"
+            android:layout_alignParentLeft="true"
+            />
+</RelativeLayout>
